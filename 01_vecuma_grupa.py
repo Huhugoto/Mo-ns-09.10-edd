@@ -1,3 +1,6 @@
+BERNS_LIDZ = 12       
+PUSAUDZIS_LIDZ = 17  
+PIEAUGUSAIS_LIDZ = 64  
 ievade = input("Ievadi savu vecumu: ").strip()
 
 if ievade == "":
