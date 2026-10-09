@@ -1,4 +1,4 @@
-PAREIZA_PAROLE = "python123"
+PAREIZA_PAROLE = "46"
 MAKS_MEGINAJUMI = 3
 
 meginajumi = 0
