@@ -240,14 +240,14 @@ Norādi faila nosaukumu, ievadi, sagaidāmo rezultātu un īsi paskaidro algorit
 ## 2. Izpildes izsekošana
 
 Izvēlies vienu konkrētu ievadi un pieraksti mainīgo vērtības pa soļiem.
-
+4.programma
 ```markdown
 | Solis | Nosacījums | Mainīgie pirms | Veiktā darbība | Mainīgie pēc | Izvade |
-|------:|------------|-----------------|----------------|----------------|--------|
-| 0     | —          |                 | Sākums         |                |        |
-| 1     |            |                 |                |                |        |
-| 2     |            |                 |                |                |        |
-```
+|------:|------------|----------------|----------------|--------------|--------|
+| 0     | —    1     |      1         | 0 +1           |       1      |    1   |
+| 1     |     1      |      1         |    1+2         |    3         |   3    |
+| 2     |   1        |       3        |       3+4      |     7        |   7    |
+|  3    |            |    7           |        7+8     |      15      |  15    |
 
 ## 3. Testa piemēri
 
@@ -256,15 +256,18 @@ Izveido vismaz četrus atšķirīgus testus.
 ```markdown
 | Testa veids | Ievade | Sagaidāmais rezultāts | Faktiskais rezultāts | Tests izturēts? |
 |-------------|--------|-----------------------|---------------------|-----------------|
-| Tipisks     |        |                       |                     |                 |
-| Robežgadījums |      |                       |                     |                 |
-| Tukša vai nederīga ievade | |                 |                     |                 |
-| Papildu tests |      |                       |                     |                 |
+| Tipisks     |   5     |            15           |          15           |        jā         |
+| Robežgadījums |    1  |            1            |            1          |     jā            |
+| Tukša vai nederīga ievade |0 |       0          |           kļūda       |         nē        |
+| Papildu tests |   -5   |              0         |        0              |          jā       |
 ```
 
 ## 4. Kļūda, pretpiemērs vai uzlabojums
 
 Ja tests atklāj kļūdu, pieraksti ievadi, sagaidāmo rezultātu, faktisko rezultātu, kļūdas cēloni un labojumu.
+
+ATBILDE: kļūda bija pie tukšas ievades jo ievaditajam sk. jabut lielakam par 0
+
 
 Ja programma visus testus iztur, izvēlies agrāku kļūdainu `commit` vai paskaidro, kura ievade radītu kļūdu bez vienas no tavām pārbaudēm.
 
